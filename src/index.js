@@ -59,6 +59,7 @@ export default class SimplePDF extends React.Component {
           page.render(renderContext);
         });
       }
+      this.props.renderComplete && this.props.renderComplete()
     });
   }
 
